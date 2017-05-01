@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>横向两列布局</title>
+	<style type="text/css">
+	#mainbody{
+		background-color: red;
+		position: relative;
+	}
+	#left{
+		width: 300px;
+		height: 600px;
+		background-color: blue;
+	}
+	#right{
+		height:400px;
+		background-color: yellow;
+		position: absolute;
+		top:0;
+		left:320px;
+		/*margin-left:30px;相对于定位元素*/
+	}
+	</style>
+</head>
+<body>
+	<div id="mainbody">
+		<div id="left">固定宽度</div>
+		<div id="right">自适应宽度</div>	
+	</div>
+	<!--适合一列固定宽度一列自适应
+	固定宽度的一列的高度>自适应的高度
+-->
+</body>
+</html>
